@@ -1,6 +1,8 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
+import ShoppingListItem from './ShoppingListItem'
+
 export default function ShoppingList(props) {
 
     const recipeIngredientsArray = props.recipes.map(recipe => {
@@ -9,21 +11,13 @@ export default function ShoppingList(props) {
         })
     })
     
+
     const renderShoppingList = () => {
-        const flatArray = recipeIngredientsArray.flat() 
-        for (let i = 0; i < flatArray.length; i++){
-            render(
-                <ul>
-                    <li className='shopping-list-element'>{flatArray[i]}</li>
-                </ul>
-            ) 
-        }
-
-        console.log(flatArray)
-        console.log(flatArray.length)
+        const flatArray = recipeIngredientsArray.flat()
+        return flatArray.map(recipe => {
+            return <ShoppingListItem name={recipe}/>
+        })
     }
-
-
 
     return (
         <div className="shopping-list-container">
