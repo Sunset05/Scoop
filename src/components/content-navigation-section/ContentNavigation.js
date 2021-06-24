@@ -7,8 +7,8 @@ export default function ContentNavigation(props) {
 
         {/* change te string in state to content display can use this state */}
             <button onClick={() => props.changePageState("Recipes")}>Cookbook recipes</button>
-            <button onClick={() => props.changePageState("Create Recipe")}>create recipe</button>
-            <button>shopping list</button>
+            <button onClick={() => props.changePageState("Create Recipe")}>Create recipe</button>
+            <button onClick={ () => props.changePageState("Shopping List")}>Shopping list</button>
         </div>
     )
 }

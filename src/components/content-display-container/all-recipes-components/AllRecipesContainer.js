@@ -3,19 +3,19 @@ import RecipeCard from './RecipeCards'
 
 export default class AllRecipesContainer extends Component{
     
-    state = {
-        recipes: []
-    }
+    // state = {
+    //     recipes: []
+    // }
 
-    componentDidMount(){
-        fetch('http://127.0.0.1:9393/recipes')
-            .then(response => response.json())
-            .then(recipes => this.setState(recipes))
-        }
+    // componentDidMount(){
+    //     fetch('http://127.0.0.1:9393/recipes')
+    //         .then(response => response.json())
+    //         .then(recipes => this.setState(recipes))
+    //     }
     
     renderRecipeCards = () => {
-        console.log(this.state.recipes)
-        return this.state.recipes.map(recipe => {
+        console.log(this.props.recipes)
+        return this.props.recipes.map(recipe => {
             return <RecipeCard meal={recipe.meal} imageUrl={recipe.image_url} ingredients={recipe.ingredients}/>
         })
     }

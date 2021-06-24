@@ -10,7 +10,14 @@ export default class MainContainer extends Component {
         page: '',
         // allRecipesContainer: true,
         // shoppingList: false
+        recipes: []
     }
+
+    componentDidMount(){
+        fetch('http://127.0.0.1:9393/recipes')
+            .then(response => response.json())
+            .then(recipes => this.setState(recipes))
+        }
 
     changePageState = (string) => {
         return this.setState({page: string})
@@ -22,7 +29,7 @@ export default class MainContainer extends Component {
             <div className='main-container'>
 
                 <ContentNavigation changePageState={this.changePageState} currentPage={this.state.page}/>
-                <ContentDisplay displayContainer={this.state.page} />
+                <ContentDisplay displayContainer={this.state.page} recipes={this.state.recipes}/>
                 
             </div>
         )

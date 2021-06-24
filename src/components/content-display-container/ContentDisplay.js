@@ -2,6 +2,7 @@ import React from 'react'
 import AllRecipesContainer from './all-recipes-components/AllRecipesContainer'
 import CreateRecipeContainer from './create-recipes-components/CreateRecipeContainer';
 import DefaultContentDisplay from './DefaultContentDisplay';
+import ShoppingList from './grocery-shopping-list/ShoppingList';
 
 export default function ContentDisplay(props) {
 
@@ -9,9 +10,11 @@ export default function ContentDisplay(props) {
     const renderSwitch = (string) => {
         switch(string) {
             case "Recipes":
-                return <AllRecipesContainer/>;
+                return <AllRecipesContainer recipes={props.recipes}/>;
             case "Create Recipe":
                 return <CreateRecipeContainer/>;
+            case "Shopping List":
+                return <ShoppingList recipes={props.recipes}/>
             default:
                 return <DefaultContentDisplay/>;
         }
