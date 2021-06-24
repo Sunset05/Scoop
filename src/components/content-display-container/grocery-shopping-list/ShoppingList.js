@@ -13,7 +13,9 @@ export default function ShoppingList(props) {
         const flatArray = recipeIngredientsArray.flat() 
         for (let i = 0; i < flatArray.length; i++){
             render(
-                <li>{flatArray[i]}</li>
+                <ul>
+                    <li className='shopping-list-element'>{flatArray[i]}</li>
+                </ul>
             ) 
         }
 

@@ -122,3 +122,10 @@
 
 
 
+/*shopping list item styling*/
+.shopping-list-element{
+  display:flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+}
