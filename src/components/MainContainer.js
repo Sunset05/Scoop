@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Nodefetch from 'node-fetch'
 
 import ContentDisplay from './content-display-container/ContentDisplay'
 import ContentNavigation from './content-navigation-section/ContentNavigation'
