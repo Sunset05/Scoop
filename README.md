@@ -31,6 +31,7 @@ Welcome to Scoop, on this webpage you can check out some of the recipes in my co
 # To-do List:
     - add a create recipe component that saves to front end and back end
     - add a recipe scraping component that accepts a url and returns the ingredients from that website
+    - create 1 repo that has a folder for my front end and back end contained within
 
 # Inspiration
 The inspiration for this project came from my inneficiency when needing to create grocery shopping lists. I am the person that likes to have a list written down and I wanted to create an appliaction that does this for me.
