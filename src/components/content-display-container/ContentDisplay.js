@@ -22,7 +22,7 @@ export default function ContentDisplay(props) {
                             selectedIngredients={props.selectedIngredients}
                         />
             default:
-                return <DefaultContentDisplay/>;
+                // return <DefaultContentDisplay/>;
         }
     }
 

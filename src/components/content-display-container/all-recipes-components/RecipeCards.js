@@ -18,7 +18,7 @@ export default function RecipeCard(props) {
                     {renderIngredientList()}
                 </ul>
             </div>
-            <button onClick={() => props.addSelectedIngredients(props.ingredients.map(ingredient => ingredient.name))}>Add to Shopping List</button>    
+            <button className="add-button" onClick={() => props.addSelectedIngredients(props.ingredients.map(ingredient => ingredient.name))}>Add to Shopping List</button>    
         </div>
     )
 }

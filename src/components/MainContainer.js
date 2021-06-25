@@ -7,7 +7,7 @@ export default class MainContainer extends Component {
 
     state = {
         //change string to determine what component is rendered to the page
-        page: '',
+        page: 'Recipes',
         recipes: [],
         selectedIngredients: []
     }

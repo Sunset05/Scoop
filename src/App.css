@@ -1,17 +1,27 @@
-body, html, button{
-  font-family: 'Montserrat', sans-serif;
+html,body{ margin:0; padding:0; height:100%; width:100%; }
+/* background gradient */
+body{
+  background-image: linear-gradient(#fbab7e, #f7ce68);
+  background-repeat: no-repeat;
 }
+
+
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: rgba(102, 100, 100, 0.5);
   padding: 20px 10px;
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3DWepkeAWuxCyKOhCMPwUaR5Ag0lbV2A-OA&usqp=CAU");
 }
 
 /* Style the header links */
 .header a {
+  background-color: rgba(85, 83, 83, 0.7);
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -96,6 +106,10 @@ body, html, button{
   padding: 10px;
   width: 200px;
   height: 450px;
+  background-color: rgba(207, 205, 205, 0.5);
+  border-radius: 6%;
+  border-style: 1px solid #ccc!important;
+
 }
 
 .recipe-card-title {
@@ -112,14 +126,25 @@ body, html, button{
 .recipe-card-list {
   list-style-type: none;
   padding: 2px 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 0;
 }
 
 .content-navigation-container{
   display: flex;
   flex-direction: column;
   float:left;
-  background: lightblue;
+  /* background: lightblue; */
   width:25%;
+  padding:5px
+  
+}
+
+.navigation-button{
+  width: 100%;
+  height: 50px;
+  margin: 5px;
 }
 
 
@@ -131,4 +156,43 @@ body, html, button{
   flex-direction: column;
   list-style-type: none;
   text-align: center;
+}
+
+.add-button{
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.logo{
+
+}
+
+.scoop-image{
+  height: 50px;
+  width: 50px;
+  border-radius: 6px;
+  background-color: rgba(0,0,0,0);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+.footer-image{
+  width: 100%;
+  position: fixed;
+  bottom:0;
+  height: 100px;
+}
+
+.slogan{
+  display:flex;
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: baseline;
 }
