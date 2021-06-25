@@ -8,9 +8,8 @@ export default function Header() {
                 <img className="scoop-image" alt="scoop yur dreams" src="https://www.seekpng.com/png/detail/211-2115708_banner-freeuse-download-measuring-cups-scoop-portion-measuring.png"></img>
             </div>
             <div className="header-right">
-                <a class="active" href="#home">Home</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <a class="active" href="https://www.linkedin.com/in/keith-funk-7082a315b/" target="_blank">linkedIn</a>
+                <a href="https://github.com/Sunset05" target="_blank">Github</a>
             </div>
         </div>
     )
