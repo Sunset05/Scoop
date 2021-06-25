@@ -1,7 +1,23 @@
+body, html, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background-image: -o-linear-gradient(rgb(68, 97, 175),rgb(116, 116, 116));
+}
+
+.navigation-list-item{
+  padding: 5px;
+}
+
+/* #grad {
+  background-image: linear-gradient(rgba(68, 128, 184, 0.555), rgb(58, 58, 58));
+} */
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
+  background: rgba(36,36,36,.1);
   padding: 20px 10px;
 }
 

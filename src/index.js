@@ -6,7 +6,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App id="grad"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
