@@ -14,9 +14,13 @@ export default class AllRecipesContainer extends Component{
     //     }
     
     renderRecipeCards = () => {
-        console.log(this.props.recipes)
         return this.props.recipes.map(recipe => {
-            return <RecipeCard meal={recipe.meal} imageUrl={recipe.image_url} ingredients={recipe.ingredients}/>
+            return <RecipeCard 
+                        meal={recipe.meal} 
+                        imageUrl={recipe.image_url} 
+                        ingredients={recipe.ingredients}
+                        addSelectedIngredients={this.props.addSelectedIngredients}
+                    />
         })
     }
 

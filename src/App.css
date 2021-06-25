@@ -30,7 +30,7 @@
 }
 
 /* Style the active/current link*/
-.header a.active {
+.header a:active {
   background-color: dodgerblue;
   color: white;
 }
